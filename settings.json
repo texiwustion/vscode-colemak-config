@@ -1,0 +1,96 @@
+{
+    // 外观
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "One Dark Pro Mix",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "CodeNewRoman Nerd Font",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "zenMode.hideLineNumbers": false, // 禅模式时不隐藏行数字
+    "editor.stickyScroll.enabled": true, // 固定 scope 定义
+    "editor.linkedEditing": true, // 标签同步更改
+    "editor.suggest.insertMode": "replace", // 使用建议时替换文本
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // 拓展
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": true,
+    // 格式化
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.configPath": "D:\\VSCode\\settings\\.prettierrc",
+    "prettier.tabWidth": 4,
+    "tabWidth": 4,
+    // ts
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // 项目管理
+    "projectManager.git.baseFolders": ["w:\\git"],
+    "projectManager.sortList": "Recent",
+    // 工作台
+    "workbench.settings.editor": "json",
+    // vim
+    "vim.leader": "<space>",
+    "vim.foldfix": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.path": "D:/VsCode/settings/.vimrc",
+    "vim.vimrc.enable": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // 保存
+            "before": ["leader", "w"],
+            "commands": [":w!"]
+        },
+        {
+            // 退出
+            "before": ["leader", "q"],
+            "commands": ["workbench.action.closeWindow"]
+        },
+        {
+            // 新窗口
+            "before": ["s", "u"],
+            "commands": [":vsp"]
+        },
+        {
+            // 模拟鼠标悬浮
+            "before": ["leader", "h"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            // 显示快速修复
+            "before": ["leader", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            // 上一处错误
+            "before": ["[", "m"],
+            "commands": ["editor.action.marker.prevInFiles"]
+        },
+        {
+            // 下一处错误
+            "before": ["]", "m"],
+            "commands": ["editor.action.marker.nextInFiles"]
+        },
+        {
+            // 切换布尔值状态
+            "before": ["t", "b"],
+            "commands": ["extension.toggleBool"]
+        },
+        {
+            // 切换展开状态
+            "before": ["t", "f"],
+            "commands": ["editor.toggleFold"]
+        }
+    ],
+    "explorer.copyRelativePathSeparator": "/",
+    "explorer.openEditors.visible": 3,
+    "js-console.ShowEncourageMessageOnStartup": false
+}
